@@ -4,18 +4,17 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar/Navbar';
 import About from './screens/About';
 import Contact from './screens/Contact';
-import Homepage from './screens/Homepage';
+import Home from './screens/Home';
 import Projects from './screens/Projects';
 
 function App() {
   return (
     
-    <div className="wrapper">
       
       <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route exact path="/" element={<Homepage/>}/>
+          <Route exact path="/" element={<Home/>}/>
           <Route path="/projects" element={<Projects/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
@@ -23,7 +22,6 @@ function App() {
 
         <Footer/>
       </BrowserRouter>
-    </div>
   );
 }
 

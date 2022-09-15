@@ -1,33 +1,36 @@
-
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #0A3947;
+  background-color: #0a3947;
 }
 
 .pages {
   color: #316685;
   text-align: center;
   font-size: 3.5rem;
-  margin-top: 10%;
+  // margin-top: 10%;
 }
 
-
-
-
-// FOOTER STYLES
-.footer_container{
-
-  h1{
-    text-align: center;
-    color:red;
+.home_container {
+  border: 1px solid white;
+  height: 30rem;
+  margin: 1rem;
+  .left-col,
+  .right-col {
+    border: 1px solid white;
   }
-  
 }
 
+// FOOTER STYLES
+.footer_container {
+  h1 {
+    text-align: center;
+    color: red;
+  }
+}
 
 // FOOTER STYLES
-
