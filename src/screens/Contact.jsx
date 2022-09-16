@@ -1,10 +1,12 @@
 import React from 'react'
+import Contacts from '../components/Home/Contacts'
+
 
 const Contact = () => {
   return (
-    <div className='contact_page_container'>
-        <h1>Hello Contact</h1>
-    </div>
+    <main className='contact_page_container'>
+       <Contacts/>
+    </main>
   )
 }
 

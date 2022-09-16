@@ -1,10 +1,12 @@
 import React from 'react'
+import AboutContent from '../components/Home/AboutContent'
+
 
 const About = () => {
   return (
-    <div className='about_page_container'>
-        <h1>Hello About</h1>
-    </div>
+    <main className='about_page_container'>
+      <AboutContent/>
+    </main>
   )
 }
 

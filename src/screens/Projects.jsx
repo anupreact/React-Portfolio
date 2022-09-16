@@ -1,10 +1,15 @@
 import React from 'react'
+import Hero from '../components/Home/Hero'
+import Project from '../components/Home/Project'
+import Service from '../components/Home/Service'
 
 const Projects = () => {
   return (
-    <div className='projects_page_container'>
-        <h1>Hello Projects</h1>
-    </div>
+    <main className='projects_page_container'>
+       {/* <Hero/> */}
+       <Project/>
+       <Service/>
+    </main>
   )
 }
 
