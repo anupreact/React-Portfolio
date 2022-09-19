@@ -5,7 +5,7 @@ import Contacts from '../components/Home/Contacts'
 const Contact = () => {
   return (
     <main className='contact_page_container'>
-       <Contacts/>
+       <Contacts heading={false} head={true}/>
     </main>
   )
 }

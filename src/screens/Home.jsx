@@ -1,37 +1,28 @@
-import React from "react";
-import About from "../components/Home/AboutContent";
-import Contacts from "../components/Home/Contacts";
-import Hero from "../components/Home/Hero";
-import Project from "../components/Home/Project";
-import Service from "../components/Home/Service";
-import hero_image from "../images/hero.png";
+import React from 'react';
+import About from '../components/Home/AboutContent';
+import Contacts from '../components/Home/Contacts';
+import Hero from '../components/Home/Hero';
+import Project from '../components/Home/Project';
+import Service from '../components/Home/Service';
+import hero_image from '../images/hero.png';
 
 const Home = () => {
   return (
     <main className="home_container">
       {/* HERO SECTION STARTED */}
-
       <Hero />
       {/* HERO SECTION ENDED */}
-
       {/* SERVICES SECTION STARTED */}
-      <Service />
-
+      <Service heading={true}/>
       {/* SERVICES SECTION ENDED */}
-
       {/* PROJECTS SECTION STARTED */}
-
-      <Project />
+      <Project heading={true}/>
       {/* PROJECTS SECTION ENDED */}
-
       {/* // ABOUT SECTION STARTED */}
-      <About />
-
+      <About heading={true} />
       {/* // ABOUT SECTION ENDED */}
-
       {/* // CONTACT SECTION STARTED */}
-      <Contacts />
-
+      <Contacts heading={true}/>
       {/* // CONTACT SECTION ENDED */}
     </main>
   );

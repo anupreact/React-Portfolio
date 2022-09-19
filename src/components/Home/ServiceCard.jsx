@@ -1,14 +1,15 @@
 import React from "react";
 
-const ServiceCard = () => {
+const ServiceCard = (props) => {
+  const { logo, title, description, icon } = props;
   return (
     <div className="card">
-      <div className="title">Heading</div>
-      <div className="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-        incidunt eius optio eaque id sapiente vero.
+      <div className="logo">
+        <i class={logo} aria-hidden="true"></i>
       </div>
-      <div>Know More</div>
+      <div className="title">{title}</div>
+      <div className="description">{description}</div>
+      {/* <div className="know-more">Know More</div> */}
     </div>
   );
 };

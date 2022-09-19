@@ -1,9 +1,20 @@
 import React from "react";
 
-const Contacts = () => {
+const Contacts = (props) => {
   return (
     <section className="contact">
-      <h1 className="heading">CONTACT</h1>
+      {props.heading && <h1 className="heading">CONTACT</h1>}
+      {props.head && (
+        <div className="head">
+          <span>LET’S TALK</span>
+          <span>
+            Share your excitement with us. I will be more than happy to serve my
+            Services to you.
+          </span>
+          <span>Choose any of the below options to connect with me.</span>
+        </div>
+      )}
+
       <div className="cards-container">
         <div className="card">
           <h2 className="left-card-header">Reach Out to me</h2>
@@ -12,7 +23,7 @@ const Contacts = () => {
               <i class="fa fa-map-marker" aria-hidden="true"></i>
             </div>
             <div className="content">
-              <span>At Post Mohagaon(Zilpi),Ta.Hingna</span>
+              <span>At Post Mohagaon (Zilpi) , Ta. Hingna</span>
               <div>Maharashtra Nagpur, 441110</div>
             </div>
           </div>
@@ -48,14 +59,6 @@ const Contacts = () => {
             </div>
           </div>
         </div>
-
-
-
-
-
-
-
-        
         <div className="card right-card">
           <div className="header">
             <h3>Send Me An Enquiry</h3>

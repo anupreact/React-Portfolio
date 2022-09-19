@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <main className='projects_page_container'>
        {/* <Hero/> */}
-       <Project/>
+       <Project heading={false}/>
        <Service/>
     </main>
   )

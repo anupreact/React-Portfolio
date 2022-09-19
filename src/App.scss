@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;300&family=Saira+Condensed:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,11 +18,20 @@ body {
   // margin-top: 10%;
 }
 
-.home_container ,.projects_page_container ,.about_page_container , .contact_page_container{
+.home_container,
+.projects_page_container,
+.about_page_container,
+.contact_page_container {
   // border: 1px solid rgb(180, 183, 184);
-  margin:2rem 1rem;
+  margin: 2rem 1rem;
   padding: 0.1rem;
   // HERO SECTION STARTED
+  .contact,
+  .projects,
+  .about,
+  .services {
+    margin-bottom: 4rem;
+  }
 
   .hero {
     padding: 1rem;
@@ -45,9 +54,11 @@ body {
           font-weight: bold;
           font-size: 3rem;
           color: rgb(15, 172, 172);
+          letter-spacing: 0.1rem;
         }
         .title {
           font-weight: bolder;
+          letter-spacing: 0.1rem;
           font-size: 2.7rem;
           color: rgb(9, 237, 176);
         }
@@ -108,6 +119,19 @@ body {
       justify-content: center;
       img {
         width: 20rem;
+        animation: MoveUpDown 2s linear infinite;
+        position: relative;
+        left: 0;
+        bottom: 0;
+      }
+      @keyframes MoveUpDown {
+        0%,
+        100% {
+          bottom: 0;
+        }
+        50% {
+          bottom: 40px;
+        }
       }
     }
   }
@@ -121,7 +145,6 @@ body {
       text-align: center;
       color: white;
       letter-spacing: 0.3rem;
-      text-decoration: underline;
     }
     .cards-container {
       // border: 1px solid gray;
@@ -133,26 +156,45 @@ body {
       .card {
         width: 30%;
         // background: rgb(18, 17, 17);
-        border: 1px solid white;
+        border: 1px solid rgb(8, 232, 217);
         color: white;
         padding: 0.2rem;
         margin: 0.6rem;
+        border-radius: 5px;
+        background: linear-gradient(145deg, #093340, #0b3d4c);
+        box-shadow: 8px 8px 16px #082c37, -8px -8px 16px #0c4657;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .logo {
+          color: rgb(13, 204, 238);
+          margin: 0.4rem 0rem;
+          font-size: 3rem;
+        }
         .title {
-          margin: 1rem;
           margin-bottom: 0.1rem;
           font-weight: bold;
-          color: #316685;
+          color: #04a1aa;
+          margin: 0.4rem 0rem;
+          letter-spacing: 0.1rem;
+          text-align: center;
+          // text-transform: uppercase;
         }
         .description {
+          text-align: center;
           margin: 1rem;
+          color: rgb(35, 132, 174);
         }
-        div {
-          margin: 1rem;
+        .know-more {
+          margin: 0.6rem 0rem;
         }
+        // div {
+        //   margin: 1rem;
+        // }
       }
     }
   }
-
   // SERVICES SECTION ENDED
 
   // PROJECTS SECTION STARTED
@@ -164,10 +206,8 @@ body {
       text-align: center;
       color: white;
       letter-spacing: 0.3rem;
-      text-decoration: underline;
     }
     .cards-container {
-      // border: 1px solid gray;
       width: 90%;
       margin: 0.4rem auto;
       display: flex;
@@ -176,10 +216,13 @@ body {
       .card {
         width: 30%;
         // background: rgb(18, 17, 17);
-        border: 1px solid white;
+        // border: 1px solid rgb(4, 45, 63);
         color: white;
         padding: 0.2rem;
         margin: 0.6rem;
+        border-radius: 15px;
+        background: linear-gradient(145deg, #093340, #0b3d4c);
+        box-shadow: 8px 8px 16px #082c37, -8px -8px 16px #0c4657;
         .image-box {
           // border: 1px solid green;
           width: 95%;
@@ -211,7 +254,50 @@ body {
       text-align: center;
       color: white;
       letter-spacing: 0.3rem;
-      text-decoration: underline;
+    }
+    .quote {
+      color: rgb(243, 243, 243);
+      width: 90%;
+      margin: 3rem auto;
+      text-align: center;
+      font-size: 1.3rem;
+      font-family: "Saira Condensed", sans-serif;
+      letter-spacing: 0.1rem;
+      // font-style: italic;
+
+      span {
+        font-size: 2rem;
+        padding: 0 !important;
+        line-height: 1;
+      }
+    }
+
+    .react-info {
+      .head {
+        font-family: "Saira Condensed", sans-serif;
+        // font-style: normal;
+        // font-weight: 600;
+        font-size: 30px;
+        line-height: 48px;
+        color: #16b4ee;
+        width: 90%;
+        margin: 3rem auto;
+        margin-bottom: 0.3rem;
+        // background: #000;
+      }
+      ul {
+        width: 90%;
+        margin: 3rem auto;
+        margin-top: 0.1rem;
+        // background: #000;
+        li {
+          line-height: 2;
+          color: white;
+          font-family: "Saira Condensed", sans-serif;
+          font-size: 1.45rem;
+          letter-spacing: 0.06rem;
+        }
+      }
     }
     .cards-container {
       // border: 1px solid gray;
@@ -220,17 +306,39 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      border-radius: 15px;
+      background: linear-gradient(145deg, #093340, #0b3d4c);
+      box-shadow: 8px 8px 16px #082c37, -8px -8px 16px #0c4657;
       .card {
-        width: 48%;
-        // background: rgb(18, 17, 17);
+        max-width: 48%;
         // border:1px solid white;
         color: white;
         // padding:.2rem;
         margin: 0.1rem;
+        .head {
+          margin-left: 2rem;
+          font-size: 1.6rem;
+          color: #07a5a5;
+        }
         .inner {
-          border: 1px solid white;
           display: flex;
-          .inner-left {
+          // flex-wrap: wrap;
+          // width: 100%;
+          .inner-left,
+          .inner-right {
+            .edu {
+              .icon {
+                padding-top: 0.3rem;
+                margin-right: 1rem;
+              }
+              .content {
+                span,
+                h3 {
+                  font-family: "Saira Condensed", sans-serif;
+                  letter-spacing: 0.1rem;
+                }
+              }
+            }
           }
           .inner-right {
           }
@@ -294,26 +402,59 @@ body {
 
   .contact {
     // border: 1px solid yellow;
+
     margin-top: 1rem;
     .heading {
       text-align: center;
       color: white;
       letter-spacing: 0.3rem;
-      text-decoration: underline;
+      margin-bottom: 1rem;
+    }
+    .head {
+      width: 90%;
+      margin: 0.4rem auto;
+      margin-bottom: 2rem;
+      span {
+        display: block;
+        color: white;
+        margin: 0.4rem;
+        &:nth-child(1) {
+          color: white;
+          font-weight: bold;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 39px;
+          letter-spacing: 0.1rem;
+          color: #9decf1;
+        }
+        &:nth-child(2) {
+          font-family: "Saira Condensed", sans-serif;
+          font-size: 1.2rem;
+          letter-spacing: 0.1rem;
+        }
+        &:nth-child(3) {
+          font-family: "Saira Condensed", sans-serif;
+          font-size: 1.2rem;
+          letter-spacing: 0.1rem;
+        }
+      }
     }
     .cards-container {
-      // border: 1px solid gray;
+      border: 1px solid rgb(0, 229, 255);
       width: 90%;
       margin: 0.4rem auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      border-radius: 15px;
+      background: linear-gradient(145deg, #093340, #0b3d4c);
+      box-shadow: 8px 8px 16px #082c37, -8px -8px 16px #0c4657;
       .card {
-        width: 48%;
-        border: 1px solid white;
+        min-width: 48%;
+        // border: 1px solid white;
         color: white;
         margin: 0.1rem;
-        .left-card-header{
+        .left-card-header {
           margin: 2rem;
         }
         .edu {
@@ -415,3 +556,62 @@ body {
 }
 
 // FOOTER STYLES
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 768px) {
+  .contact .card {
+    width: 100%;
+  }
+  .contact .right-card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+ .projects_page_container{
+   margin: 0;padding: 0;
+ }
+ 
+  .projects {
+    .cards-container {
+      .card {
+        width: 100% !important;
+      }
+    }
+  }
+  .projects_page_container{
+    .services {
+      padding: 0;
+      .cards-container {
+        margin: 0!important;
+        width: 100%;
+        .card {
+  
+          width: 98% !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .projects {
+    .cards-container {
+      .card {
+        width: 46% !important;
+      }
+    }
+  }
+  .projects_page_container{
+    .services {
+      padding: 0;
+      .cards-container {
+        margin: 0!important;
+        width: 100%;
+        .card {
+  
+          width: 46% !important;
+        }
+      }
+    }
+  }
+}
