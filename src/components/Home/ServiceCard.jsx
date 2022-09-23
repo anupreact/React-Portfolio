@@ -5,7 +5,7 @@ const ServiceCard = (props) => {
   return (
     <div className="card">
       <div className="logo">
-        <i class={logo} aria-hidden="true"></i>
+        <i className={logo} aria-hidden="true"></i>
       </div>
       <div className="title">{title}</div>
       <div className="description">{description}</div>

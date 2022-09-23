@@ -1,5 +1,6 @@
 import React from 'react';
 import About from '../components/Home/AboutContent';
+import AboutTech from '../components/Home/AboutTech';
 import Contacts from '../components/Home/Contacts';
 import Hero from '../components/Home/Hero';
 import Project from '../components/Home/Project';
@@ -11,6 +12,8 @@ const Home = () => {
     <main className="home_container">
       {/* HERO SECTION STARTED */}
       <Hero />
+
+      <AboutTech/>
       {/* HERO SECTION ENDED */}
       {/* SERVICES SECTION STARTED */}
       <Service heading={true}/>
@@ -19,7 +22,7 @@ const Home = () => {
       <Project heading={true}/>
       {/* PROJECTS SECTION ENDED */}
       {/* // ABOUT SECTION STARTED */}
-      <About heading={true} />
+      <About heading={true} techIntro={false} />
       {/* // ABOUT SECTION ENDED */}
       {/* // CONTACT SECTION STARTED */}
       <Contacts heading={true}/>

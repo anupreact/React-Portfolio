@@ -47,10 +47,10 @@ const Service = (props) => {
     <section className="services">
       <h1 className="heading">SERVICES</h1>
       <div className="cards-container">
-        {cardData.map((data) => {
+        {cardData.map((data,index) => {
           const { logo, title, description } = data;
           return (
-            <ServiceCard logo={logo} title={title} description={description} />
+            <ServiceCard key={index} logo={logo} title={title} description={description} />
           );
         })}
       </div>

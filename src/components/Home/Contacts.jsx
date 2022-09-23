@@ -1,6 +1,12 @@
 import React from "react";
 
 const Contacts = (props) => {
+  const icons = [
+    "fa fa-linkedin",
+    "fa fa-envelope",
+    "fa fa-github",
+    "fa fa-telegram",
+  ];
   return (
     <section className="contact">
       {props.heading && <h1 className="heading">CONTACT</h1>}
@@ -20,7 +26,7 @@ const Contacts = (props) => {
           <h2 className="left-card-header">Reach Out to me</h2>
           <div className="edu">
             <div className="icon">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <i className="fa fa-map-marker" aria-hidden="true"></i>
             </div>
             <div className="content">
               <span>At Post Mohagaon (Zilpi) , Ta. Hingna</span>
@@ -29,7 +35,7 @@ const Contacts = (props) => {
           </div>
           <div className="edu">
             <div className="icon">
-              <i class="fa fa-phone" aria-hidden="true"></i>
+              <i className="fa fa-phone" aria-hidden="true"></i>
             </div>
             <div className="content">
               <span>9834075615 / 8600390454</span>
@@ -37,25 +43,22 @@ const Contacts = (props) => {
           </div>
           <div className="edu">
             <div className="icon">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <i className="fa fa-envelope" aria-hidden="true"></i>
             </div>
             <div className="content">
               <span>anupmanwatkar17@gmail.com</span>
             </div>
           </div>
 
-          <div className="icons">
-            <div>
-              {" "}
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </div>
-            <div>
-              {" "}
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-            </div>
-            <div>
-              {" "}
-              <i class="fa fa-github" aria-hidden="true"></i>
+          <div className="icons-row">
+            <div className="media-btns">
+              {icons.map((icon, index) => {
+                return (
+                  <div className="icons" key={index}>
+                    <i className={icon} aria-hidden="true"></i>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

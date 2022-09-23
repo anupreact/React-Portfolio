@@ -1,10 +1,10 @@
 import React from 'react';
 import hero_image from '../../images/hero.png';
+import AboutTech from './AboutTech';
 
-// const name = 'Hello I am Anup,';
-const name = 'Hello I am Vishal,';
-// const title = 'Frontend React-Js Developer.';
-const title = 'A Full Stack Web Developer & Project Technical Head';
+const name = 'Hello I am Anup,';
+const title = 'Frontend React-Js Developer.';
+
 const desc =
   'Inventive Frontend developer with 1+ year of Experience in HTML5, CSS3 & Mordern Javascript along with one of the most powerfull Javascript librar, "React Js" & some of its UI-libraries.';
 const icons = ['fa fa-linkedin', 'fa fa-envelope', 'fa fa-github',"fa fa-telegram"];
@@ -20,12 +20,13 @@ const Hero = () => {
         <div className="content-row2">
           <span className="subtitle">{desc}</span>
         </div>
+
         <div className="content-row3">
           <div className="media-btns">
-            {icons.map((icon) => {
+            {icons.map((icon,index) => {
               return (
-                <div className="icons">
-                  <i class={icon} aria-hidden="true"></i>
+                <div className="icons" key={index}>
+                  <i className={icon} aria-hidden="true"></i>
                 </div>
               );
             })}
